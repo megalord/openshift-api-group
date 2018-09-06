@@ -6,7 +6,7 @@ RUN go get -u github.com/Masterminds/glide && \
     glide install --strip-vendor && glide up 
 
 COPY . .
-RUN go install
+RUN make build
 
 EXPOSE 8080
 CMD ["openshift-api-group"]
