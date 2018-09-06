@@ -1,4 +1,4 @@
-FROM golang:1.8.1
+FROM golang:1.10
 
 WORKDIR $GOPATH/src/github.com/megalord/openshift-api-group/
 COPY glide.yaml glide.lock ./
